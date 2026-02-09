@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estrategia Digital para OTG Constructora - Proyecto Cantabria 2">
+    <title>Estrategia Digital Cantabria 2 | OTG Constructora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de progreso -->
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+    
+    <!-- Navegación flotante -->
+    <nav class="nav-flotante" id="navFlotante">
+        <button class="nav-btn" onclick="irSeccion('inicio')" title="Inicio">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            </svg>
+        </button>
+        <button class="nav-btn" onclick="irSeccion('menu')" title="Menú">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Sección: Inicio -->
+    <section id="inicio" class="seccion activa">
+        <div class="container-seccion">
+            <div class="logo-hero">
+                <svg viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 150 20 L 220 60 L 220 55 L 150 15 L 80 55 L 80 60 Z" fill="#FB6600"/>
+                    <rect x="195" y="28" width="12" height="25" fill="#FB6600"/>
+                    <text x="150" y="85" font-family="Inter, sans-serif" font-size="32" font-weight="800" text-anchor="middle" fill="#000">OTG</text>
+                    <text x="150" y="105" font-family="Inter, sans-serif" font-size="13" font-weight="500" text-anchor="middle" fill="#242424">CONSTRUCTORA</text>
+                </svg>
+            </div>
+            
+            <h1 class="titulo-hero">Estrategia Digital<br>Cantabria 2</h1>
+            <p class="subtitulo-hero">De constructor tradicional a máquina de ventas predecible</p>
+            
+            <div class="statement-hero">
+                <div class="statement-icon">💡</div>
+                <p>"Primero construimos el sistema que captura y convierte automáticamente,<br> luego escalamos sabiendo que cada peso genera retorno medible"</p>
+            </div>
+            
+            <button class="btn-primary" onclick="irSeccion('menu')">
+                Explorar Estrategia
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </button>
+            
+            <div class="stats-hero">
+                <div class="stat-card">
+                    <div class="stat-numero">177</div>
+                    <div class="stat-label">Casas a vender</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-numero">$91.5B</div>
+                    <div class="stat-label">Meta en ventas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-numero">12</div>
+                    <div class="stat-label">Meses</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Menú interactivo -->
+    <section id="menu" class="seccion">
+        <div class="container-seccion">
+            <h2 class="titulo-seccion">Explora la Estrategia</h2>
+            <p class="descripcion-seccion">Haz clic en cada área para descubrir los detalles</p>
+            
+            <div class="menu-grid">
+                <div class="menu-card" onclick="irSeccion('hallazgos')">
+                    <div class="menu-icon">🔍</div>
+                    <h3>Hallazgos Críticos</h3>
+                    <p>Qué está mal y qué está bien</p>
+                    <div class="menu-arrow">→</div>
+                </div>
+                
+                <div class="menu-card" onclick="irSeccion('estrategia')">
+                    <div class="menu-icon">🎯</div>
+                    <h3>La Estrategia</h3>
+                    <p>Enfoque en una oración</p>
+                    <div class="menu-arrow">→</div>
+                </div>
+                
+                <div class="menu-card" onclick="irSeccion('funnel')">
+                    <div class="menu-icon">📊</div>
+                    <h3>Funnel de Conversión</h3>
+                    <p>Cómo convertimos leads en ventas</p>
+                    <div class="menu-arrow">→</div>
+                </div>
+                
+                <div class="menu-card" onclick="irSeccion('activos')">
+                    <div class="menu-icon">📱</div>
+                    <h3>Activos Digitales</h3>
+                    <p>Estrategia por canal</p>
+                    <div class="menu-arrow">→</div>
+                </div>
+                
+                <div class="menu-card" onclick="irSeccion('automatizacion')">
+                    <div class="menu-icon">⚡</div>
+                    <h3>Automatización + CRM</h3>
+                    <p>El corazón del sistema</p>
+                    <div class="menu-arrow">→</div>
+                </div>
+                
+                <div class="menu-card" onclick="irSeccion('timeline')">
+                    <div class="menu-icon">📅</div>
+                    <h3>Plan de Acción</h3>
+                    <p>Roadmap 3, 6 y 12 meses</p>
+                    <div class="menu-arrow">→</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Hallazgos -->
+    <section id="hallazgos" class="seccion">
+        <div class="container-seccion">
+            <button class="btn-back" onclick="irSeccion('menu')">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Volver al menú
+            </button>
+            
+            <h2 class="titulo-seccion">Hallazgos Críticos</h2>
+            
+            <div class="split-view">
+                <div class="problema-box">
+                    <div class="box-header error">
+                        <h3>❌ Lo que está mal</h3>
+                    </div>
+                    <div class="box-content">
+                        <div class="finding-item">
+                            <div class="finding-icon">🚫</div>
+                            <div class="finding-text">
+                                <strong>Sin tracking real</strong>
+                                <p>Invirtieron $7.5M, generaron 1,942 conversaciones, pero NO saben cuántas vendieron</p>
+                            </div>
+                        </div>
+                        <div class="finding-item">
+                            <div class="finding-icon">📝</div>
+                            <div class="finding-text">
+                                <strong>Sin CRM</strong>
+                                <p>Leads repartidos entre WhatsApp, Excel y memoria del vendedor</p>
+                            </div>
+                        </div>
+                        <div class="finding-item">
+                            <div class="finding-icon">🐌</div>
+                            <div class="finding-text">
+                                <strong>Sin automatización</strong>
+                                <p>Respuesta lenta = 50% de leads perdidos para siempre</p>
+                            </div>
+                        </div>
+                        <div class="finding-item">
+                            <div class="finding-icon">🎯</div>
+                            <div class="finding-text">
+                                <strong>Pauta sin estrategia</strong>
+                                <p>Campañas genéricas de "mensajes", no optimizadas para ventas reales</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="oportunidad-box">
+                    <div class="box-header success">
+                        <h3>✅ Lo que está bien</h3>
+                    </div>
+                    <div class="box-content">
+                        <div class="finding-item">
+                            <div class="finding-icon">🎯</div>
+                            <div class="finding-text">
+                                <strong>CTR excepcional: 16%</strong>
+                                <p>Benchmark 2-3% = Audiencia MUY receptiva</p>
+                            </div>
+                        </div>
+                        <div class="finding-item">
+                            <div class="finding-icon">💰</div>
+                            <div class="finding-text">
+                                <strong>CPM bajo: $8,590</strong>
+                                <p>Pauta muy eficiente en costo</p>
+                            </div>
+                        </div>
+                        <div class="finding-item">
+                            <div class="finding-icon">🏆</div>
+                            <div class="finding-text">
+                                <strong>Producto único</strong>
+                                <p>Casas listas, no sobre planos = ventaja real</p>
+                            </div>
+                        </div>
+                        <div class="finding-item">
+                            <div class="finding-icon">💳</div>
+                            <div class="finding-text">
+                                <strong>Financiamiento propio</strong>
+                                <p>Captura el 30% que los bancos rechazan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="insight-box">
+                <div class="insight-icon">💡</div>
+                <div class="insight-content">
+                    <h3>Insight Clave</h3>
+                    <p>Están invirtiendo en generar tráfico <strong>sin tener la infraestructura para convertirlo.</strong> Es como llenar agua en un balde con hueco.</p>
+                </div>
+            </div>
+            
+            <div class="numeros-historicos">
+                <div class="numero-card">
+                    <div class="numero-valor">$7.5M</div>
+                    <div class="numero-desc">Invertido May-Dic 2024</div>
+                </div>
+                <div class="flecha-numero">→</div>
+                <div class="numero-card">
+                    <div class="numero-valor">1,942</div>
+                    <div class="numero-desc">Conversaciones generadas</div>
+                </div>
+                <div class="flecha-numero">→</div>
+                <div class="numero-card problema">
+                    <div class="numero-valor">???</div>
+                    <div class="numero-desc">Ventas reales (sin tracking)</div>
+                </div>
+            </div>
+            
+            <button class="btn-primary" onclick="irSeccion('estrategia')">
+                Siguiente: La Estrategia
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección: Estrategia -->
+    <section id="estrategia" class="seccion">
+        <div class="container-seccion">
+            <button class="btn-back" onclick="irSeccion('menu')">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Volver al menú
+            </button>
+            
+            <h2 class="titulo-seccion">La Estrategia</h2>
+            
+            <div class="estrategia-statement">
+                <h3>En una oración:</h3>
+                <p>"Primero <span class="highlight">construimos</span> el sistema que captura, nutre y convierte leads automáticamente, luego <span class="highlight">escalamos</span> la inversión publicitaria sabiendo que cada peso genera retorno medible."</p>
+            </div>
+            
+            <div class="fases-container">
+                <div class="fase-card">
+                    <div class="fase-numero">1</div>
+                    <h4>CONSTRUIR</h4>
+                    <p>CRM + Automatización + Tracking</p>
+                    <div class="fase-detalle">
+                        <span class="label">Mes 1</span>
+                        <span class="valor">Pauta: $800K</span>
+                    </div>
+                </div>
+                
+                <div class="fase-arrow">→</div>
+                
+                <div class="fase-card">
+                    <div class="fase-numero">2</div>
+                    <h4>VALIDAR</h4>
+                    <p>Probar y optimizar el sistema</p>
+                    <div class="fase-detalle">
+                        <span class="label">Mes 2-3</span>
+                        <span class="valor">Pauta: $1.5M</span>
+                    </div>
+                </div>
+                
+                <div class="fase-arrow">→</div>
+                
+                <div class="fase-card">
+                    <div class="fase-numero">3</div>
+                    <h4>ESCALAR</h4>
+                    <p>Acelerar con sistema probado</p>
+                    <div class="fase-detalle">
+                        <span class="label">Mes 4+</span>
+                        <span class="valor">Pauta: $2.5M+</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comparacion-estrategias">
+                <div class="estrategia-card incorrecta">
+                    <div class="estrategia-header">
+                        <span class="badge error">❌ Equivocado</span>
+                        <h4>Invertir $2.5M desde día 1</h4>
+                    </div>
+                    <ul class="estrategia-lista">
+                        <li>200 leads/mes sin sistema</li>
+                        <li>50% se pierden = $1.25M botados</li>
+                        <li>ROI: No se puede medir</li>
+                        <li>Imposible optimizar</li>
+                    </ul>
+                </div>
+                
+                <div class="vs-separator">VS</div>
+                
+                <div class="estrategia-card correcta">
+                    <div class="estrategia-header">
+                        <span class="badge success">✅ Correcto</span>
+                        <h4>Construir primero, escalar después</h4>
+                    </div>
+                    <ul class="estrategia-lista">
+                        <li>0% leads perdidos con automatización</li>
+                        <li>Conversión: 12%+ medible</li>
+                        <li>ROAS: >20x predecible</li>
+                        <li>Optimización basada en data</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <button class="btn-primary" onclick="irSeccion('funnel')">
+                Siguiente: Funnel de Conversión
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección: Funnel -->
+    <section id="funnel" class="seccion">
+        <div class="container-seccion">
+            <button class="btn-back" onclick="irSeccion('menu')">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Volver al menú
+            </button>
+            
+            <h2 class="titulo-seccion">Funnel de Conversión</h2>
+            <p class="descripcion-seccion">Cómo convertimos visitantes en compradores</p>
+            
+            <div class="funnel-visual">
+                <div class="funnel-etapa awareness">
+                    <div class="etapa-header">
+                        <div class="etapa-titulo">
+                            <h3>AWARENESS</h3>
+                            <span class="etapa-meta">Meta: 300-500 clicks/mes</span>
+                        </div>
+                    </div>
+                    <div class="etapa-content">
+                        <div class="canal-item">
+                            <strong>Meta Ads</strong> - Carruseles, videos, mensajes WhatsApp
+                        </div>
+                        <div class="canal-item">
+                            <strong>Google Ads</strong> - Search + Display intención alta
+                        </div>
+                        <div class="canal-item">
+                            <strong>Instagram/TikTok</strong> - Contenido orgánico 3x semana
+                        </div>
+                        <div class="canal-item">
+                            <strong>Blog SEO</strong> - 8 artículos/mes posicionamiento
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="funnel-arrow">↓</div>
+                
+                <div class="funnel-etapa consideracion">
+                    <div class="etapa-header">
+                        <div class="etapa-titulo">
+                            <h3>CONSIDERACIÓN</h3>
+                            <span class="etapa-meta">Meta: 200 leads/mes (score >50)</span>
+                        </div>
+                    </div>
+                    <div class="etapa-content">
+                        <div class="canal-item">
+                            <strong>Landing pages</strong> - Específicas por segmento
+                        </div>
+                        <div class="canal-item">
+                            <strong>Bot WhatsApp</strong> - Calificación automática 24/7
+                        </div>
+                        <div class="canal-item">
+                            <strong>Email nurturing</strong> - Serie de 7 emails
+                        </div>
+                        <div class="canal-item">
+                            <strong>Remarketing</strong> - Perseguir visitantes
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="funnel-arrow">↓</div>
+                
+                <div class="funnel-etapa conversion">
+                    <div class="etapa-header">
+                        <div class="etapa-titulo">
+                            <h3>CONVERSIÓN</h3>
+                            <span class="etapa-meta">Meta: 25 ventas/mes (12% conversión)</span>
+                        </div>
+                    </div>
+                    <div class="etapa-content">
+                        <div class="canal-item">
+                            <strong>CRM asigna</strong> - Lead a vendedor en <5 min
+                        </div>
+                        <div class="canal-item">
+                            <strong>Contacto humano</strong> - Asesor agenda visita
+                        </div>
+                        <div class="canal-item">
+                            <strong>Propuesta personalizada</strong> - Davivienda vs OTG
+                        </div>
+                        <div class="canal-item">
+                            <strong>Seguimiento auto</strong> - Si no cierra, nurturing
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="conversion-path">
+                <h3>Ruta de Conversión</h3>
+                <div class="path-flow">
+                    <div class="path-step">
+                        <div class="path-numero">200</div>
+                        <div class="path-label">Leads</div>
+                    </div>
+                    <div class="path-arrow">→</div>
+                    <div class="path-step">
+                        <div class="path-numero">180</div>
+                        <div class="path-label">Contactados<br><small>(90%)</small></div>
+                    </div>
+                    <div class="path-arrow">→</div>
+                    <div class="path-step">
+                        <div class="path-numero">63</div>
+                        <div class="path-label">Agendan visita<br><small>(35%)</small></div>
+                    </div>
+                    <div class="path-arrow">→</div>
+                    <div class="path-step">
+                        <div class="path-numero">50</div>
+                        <div class="path-label">Asisten<br><small>(80%)</small></div>
+                    </div>
+                    <div class="path-arrow">→</div>
+                    <div class="path-step">
+                        <div class="path-numero">15</div>
+                        <div class="path-label">Propuestas<br><small>(30%)</small></div>
+                    </div>
+                    <div class="path-arrow">→</div>
+                    <div class="path-step final">
+                        <div class="path-numero">12</div>
+                        <div class="path-label">Cierres<br><small>(80%)</small></div>
+                    </div>
+                </div>
+                <div class="conversion-final">
+                    Conversión final lead → venta: <strong>6%</strong>
+                </div>
+            </div>
+            
+            <button class="btn-primary" onclick="irSeccion('activos')">
+                Siguiente: Activos Digitales
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección: Activos Digitales -->
+    <section id="activos" class="seccion">
+        <div class="container-seccion">
+            <button class="btn-back" onclick="irSeccion('menu')">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Volver al menú
+            </button>
+            
+            <h2 class="titulo-seccion">Activos Digitales</h2>
+            <p class="descripcion-seccion">Estrategia específica por canal</p>
+            
+            <div class="activos-grid">
+                <div class="activo-card">
+                    <div class="activo-icon">🌐</div>
+                    <h3>Sitio Web</h3>
+                    <div class="activo-rol">CONSIDERACIÓN + CONVERSIÓN</div>
+                    <ul class="activo-lista">
+                        <li>Inventario tiempo real</li>
+                        <li>Blog SEO (8 art/mes)</li>
+                        <li>Portal del cliente</li>
+                    </ul>
+                    <div class="activo-meta">Meta: 15K visitas/mes</div>
+                </div>
+                
+                <div class="activo-card destacado">
+                    <div class="activo-icon">📱</div>
+                    <h3>Meta Ads</h3>
+                    <div class="activo-rol">AWARENESS + REMARKETING</div>
+                    <ul class="activo-lista">
+                        <li>60% presupuesto digital</li>
+                        <li>Mes 1: $800K | Mes 2-3: $1.5M</li>
+                        <li>Mes 4+: $2.5M aceleración</li>
+                    </ul>
+                    <div class="activo-meta">ROAS: >20x | CPL: <$15K</div>
+                </div>
+                
+                <div class="activo-card">
+                    <div class="activo-icon">🔍</div>
+                    <h3>Google Ads</h3>
+                    <div class="activo-rol">AWARENESS (alta intención)</div>
+                    <ul class="activo-lista">
+                        <li>Search 60%: "casas circasia"</li>
+                        <li>Display + YouTube 40%</li>
+                        <li>24% presupuesto digital</li>
+                    </ul>
+                    <div class="activo-meta">CTR Search: >8%</div>
+                </div>
+                
+                <div class="activo-card">
+                    <div class="activo-icon">📸</div>
+                    <h3>Instagram</h3>
+                    <div class="activo-rol">AWARENESS + SOCIAL PROOF</div>
+                    <ul class="activo-lista">
+                        <li>3 posts/semana estratégicos</li>
+                        <li>Stories diarias activas</li>
+                        <li>Automatización DMs (ManyChat)</li>
+                    </ul>
+                    <div class="activo-meta">Engagement: >10%</div>
+                </div>
+                
+                <div class="activo-card destacado">
+                    <div class="activo-icon">💬</div>
+                    <h3>WhatsApp Business</h3>
+                    <div class="activo-rol">CONVERSIÓN (el más crítico)</div>
+                    <ul class="activo-lista">
+                        <li>Bot IA: Respuesta <1min 24/7</li>
+                        <li>Calificación automática BANT</li>
+                        <li>Escalamiento inteligente</li>
+                    </ul>
+                    <div class="activo-meta">Conversación→Visita: >30%</div>
+                </div>
+                
+                <div class="activo-card destacado">
+                    <div class="activo-icon">⚙️</div>
+                    <h3>CRM</h3>
+                    <div class="activo-rol">CONVERSIÓN + ANÁLISIS</div>
+                    <ul class="activo-lista">
+                        <li>HubSpot o Pipedrive</li>
+                        <li>Lead scoring automático</li>
+                        <li>Pipeline visual 7 etapas</li>
+                    </ul>
+                    <div class="activo-meta">100% leads registrados</div>
+                </div>
+            </div>
+            
+            <button class="btn-primary" onclick="irSeccion('automatizacion')">
+                Siguiente: Automatización + CRM
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección: Automatización -->
+    <section id="automatizacion" class="seccion">
+        <div class="container-seccion">
+            <button class="btn-back" onclick="irSeccion('menu')">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Volver al menú
+            </button>
+            
+            <h2 class="titulo-seccion">Automatización + CRM</h2>
+            <p class="descripcion-seccion">El corazón del sistema</p>
+            
+            <div class="auto-comparacion">
+                <div class="auto-box sin">
+                    <h3>❌ SIN Automatización</h3>
+                    <ul>
+                        <li>Lead llega 11pm → Se pierde hasta mañana</li>
+                        <li>Lead por 3 canales → Confusión total</li>
+                        <li>Vendedor ocupado → Nadie responde</li>
+                        <li>No saben en qué etapa está → Caos</li>
+                        <li>Sin seguimiento → 50% desperdiciados</li>
+                    </ul>
+                    <div class="resultado-box negativo">
+                        <p>De 200 leads/mes, solo 80 se atienden</p>
+                        <p class="destaque">= 120 leads perdidos = $31M botados</p>
+                    </div>
+                </div>
+                
+                <div class="auto-box con">
+                    <h3>✅ CON Automatización</h3>
+                    <ul>
+                        <li>Lead llega 24/7 → Bot responde <1min</li>
+                        <li>Multi-canal → Todo unificado en CRM</li>
+                        <li>Vendedor ocupado → Bot califica y nutre</li>
+                        <li>Cada lead → Etapa clara visible</li>
+                        <li>Seguimiento auto → 0% perdidos</li>
+                    </ul>
+                    <div class="resultado-box positivo">
+                        <p>De 200 leads/mes, 200 se atienden</p>
+                        <p class="destaque">= 0 perdidos = +$31M en ventas</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="roi-box">
+                <h3>ROI de la Automatización</h3>
+                <div class="roi-grid">
+                    <div class="roi-item">
+                        <div class="roi-label">Inversión año 1</div>
+                        <div class="roi-valor">$9,000,000</div>
+                    </div>
+                    <div class="roi-item">
+                        <div class="roi-label">Leads salvados/año</div>
+                        <div class="roi-valor">1,440</div>
+                    </div>
+                    <div class="roi-item">
+                        <div class="roi-label">Ventas extra</div>
+                        <div class="roi-valor">173 casas</div>
+                    </div>
+                    <div class="roi-item destacado">
+                        <div class="roi-label">ROI</div>
+                        <div class="roi-valor grande">9,938x</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="herramientas-box">
+                <h3>🛠️ Herramientas Recomendadas</h3>
+                <div class="herramientas-grid">
+                    <div class="herramienta-item">
+                        <div class="herr-nombre">CRM</div>
+                        <div class="herr-opciones">
+                            <span class="herr-opcion recomendada">HubSpot ($800K/mes)</span>
+                            <span class="herr-opcion">Pipedrive ($300K/mes)</span>
+                        </div>
+                    </div>
+                    <div class="herramienta-item">
+                        <div class="herr-nombre">WhatsApp Bot</div>
+                        <div class="herr-opciones">
+                            <span class="herr-opcion">Kommo ($200K/mes)</span>
+                            <span class="herr-opcion">Fabián (Por cotizar)</span>
+                        </div>
+                    </div>
+                    <div class="herramienta-item">
+                        <div class="herr-nombre">Automatización RRSS</div>
+                        <div class="herr-opciones">
+                            <span class="herr-opcion">ManyChat ($80K/mes)</span>
+                        </div>
+                    </div>
+                    <div class="herramienta-item">
+                        <div class="herr-nombre">Email Marketing</div>
+                        <div class="herr-opciones">
+                            <span class="herr-opcion">Mailchimp ($150K/mes)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="herr-total">Total herramientas: <strong>~$1,500,000/mes</strong></div>
+            </div>
+            
+            <button class="btn-primary" onclick="irSeccion('timeline')">
+                Siguiente: Plan de Acción
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección: Timeline -->
+    <section id="timeline" class="seccion">
+        <div class="container-seccion">
+            <button class="btn-back" onclick="irSeccion('menu')">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Volver al menú
+            </button>
+            
+            <h2 class="titulo-seccion">Plan de Acción</h2>
+            
+            <div class="timeline-tabs">
+                <button class="timeline-tab activa" onclick="cambiarTab('3')">3 Meses</button>
+                <button class="timeline-tab" onclick="cambiarTab('6')">6 Meses</button>
+                <button class="timeline-tab" onclick="cambiarTab('12')">12 Meses</button>
+            </div>
+            
+            <!-- Plan 3 meses -->
+            <div id="tab-3" class="timeline-content activa">
+                <h3>Plan 3 Meses (Contrato Inicial)</h3>
+                <p class="timeline-objetivo">Objetivo: Construir y validar el sistema</p>
+                
+                <div class="meses-grid">
+                    <div class="mes-card">
+                        <div class="mes-badge">MES 1</div>
+                        <h4>FUNDACIONES</h4>
+                        <ul>
+                            <li>Setup CRM + Bot + Tracking</li>
+                            <li>Pixel + eventos configurados</li>
+                            <li>Capacitación equipo ventas</li>
+                            <li>Campañas en modo prueba</li>
+                        </ul>
+                        <div class="mes-inversion">
+                            <div class="inv-item">
+                                <span>Equipo:</span>
+                                <strong>$12,500,000</strong>
+                            </div>
+                            <div class="inv-item">
+                                <span>Pauta:</span>
+                                <strong>$800,000</strong>
+                            </div>
+                            <div class="inv-total">
+                                <span>Total:</span>
+                                <strong>$13,300,000</strong>
+                            </div>
+                        </div>
+                        <div class="mes-resultados">
+                            <strong>Resultados esperados:</strong>
+                            <p>Sistema operativo | 40-50 leads | 4-5 ventas</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mes-card">
+                        <div class="mes-badge">MES 2-3</div>
+                        <h4>VALIDACIÓN</h4>
+                        <ul>
+                            <li>Optimización del funnel</li>
+                            <li>A/B testing campañas</li>
+                            <li>Refinamiento lead scoring</li>
+                            <li>Escalar pauta gradualmente</li>
+                        </ul>
+                        <div class="mes-inversion">
+                            <div class="inv-item">
+                                <span>Equipo:</span>
+                                <strong>$11,000,000/mes</strong>
+                            </div>
+                            <div class="inv-item">
+                                <span>Pauta:</span>
+                                <strong>$1,500,000/mes</strong>
+                            </div>
+                            <div class="inv-total">
+                                <span>Total:</span>
+                                <strong>$12,500,000/mes</strong>
+                            </div>
+                        </div>
+                        <div class="mes-resultados">
+                            <strong>Resultados esperados:</strong>
+                            <p>100-120 leads/mes | Conv >10% | 10-12 ventas/mes</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="resumen-periodo">
+                    <h4>Resumen 3 Meses</h4>
+                    <div class="resumen-grid">
+                        <div class="resumen-item">
+                            <div class="resumen-label">Inversión Total</div>
+                            <div class="resumen-valor">$38,800,000</div>
+                        </div>
+                        <div class="resumen-item">
+                            <div class="resumen-label">Ventas Esperadas</div>
+                            <div class="resumen-valor">26-29 casas</div>
+                        </div>
+                        <div class="resumen-item">
+                            <div class="resumen-label">Ingresos</div>
+                            <div class="resumen-valor">$13.4B - $15B</div>
+                        </div>
+                        <div class="resumen-item destacado">
+                            <div class="resumen-label">ROI</div>
+                            <div class="resumen-valor">346x - 386x</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Plan 6 meses -->
+            <div id="tab-6" class="timeline-content">
+                <h3>Plan 6 Meses (Recomendado)</h3>
+                <p class="timeline-objetivo">Objetivo: Construir, validar y empezar a escalar</p>
+                
+                <div class="periodos-container">
+                    <div class="periodo-card">
+                        <h4>Mes 1-3: FUNDACIONES + VALIDACIÓN</h4>
+                        <p>Como plan de 3 meses</p>
+                        <div class="periodo-inversion">$38,800,000</div>
+                    </div>
+                    
+                    <div class="periodo-arrow">→</div>
+                    
+                    <div class="periodo-card">
+                        <h4>Mes 4-6: ACELERACIÓN</h4>
+                        <ul>
+                            <li>Pauta plena ($2.5M/mes)</li>
+                            <li>200+ leads/mes</li>
+                            <li>20-25 ventas/mes</li>
+                            <li>Expansión de canales</li>
+                            <li>Programa de referidos activo</li>
+                        </ul>
+                        <div class="periodo-inversion">$42,000,000</div>
+                    </div>
+                </div>
+                
+                <div class="resumen-periodo">
+                    <h4>Resumen 6 Meses</h4>
+                    <div class="resumen-grid">
+                        <div class="resumen-item">
+                            <div class="resumen-label">Inversión Total</div>
+                            <div class="resumen-valor">$80,800,000</div>
+                        </div>
+                        <div class="resumen-item">
+                            <div class="resumen-label">Ventas Esperadas</div>
+                            <div class="resumen-valor">86-104 casas</div>
+                        </div>
+                        <div class="resumen-item">
+                            <div class="resumen-label">Ingresos</div>
+                            <div class="resumen-valor">$44.5B - $53.8B</div>
+                        </div>
+                        <div class="resumen-item destacado">
+                            <div class="resumen-label">ROI</div>
+                            <div class="resumen-valor">550x - 665x</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Plan 12 meses -->
+            <div id="tab-12" class="timeline-content">
+                <h3>Plan 12 Meses (Meta Completa)</h3>
+                <p class="timeline-objetivo">Objetivo: Vender las 177 casas completas</p>
+                
+                <div class="trimestres-grid">
+                    <div class="trimestre-card">
+                        <h4>Q1 (Mes 1-3)</h4>
+                        <p>Fundaciones + Validación</p>
+                        <div class="trim-ventas">26-29 casas</div>
+                    </div>
+                    <div class="trimestre-card">
+                        <h4>Q2 (Mes 4-6)</h4>
+                        <p>Aceleración</p>
+                        <div class="trim-ventas">60-75 casas</div>
+                    </div>
+                    <div class="trimestre-card">
+                        <h4>Q3 (Mes 7-9)</h4>
+                        <p>Optimización Máxima</p>
+                        <div class="trim-ventas">75-90 casas</div>
+                    </div>
+                    <div class="trimestre-card">
+                        <h4>Q4 (Mes 10-12)</h4>
+                        <p>Cierre de Inventario</p>
+                        <div class="trim-ventas">60-75 casas</div>
+                    </div>
+                </div>
+                
+                <div class="resumen-periodo">
+                    <h4>Resumen Año Completo</h4>
+                    <div class="resumen-grid">
+                        <div class="resumen-item">
+                            <div class="resumen-label">Inversión Total</div>
+                            <div class="resumen-valor">~$160M</div>
+                        </div>
+                        <div class="resumen-item">
+                            <div class="resumen-label">Ventas Objetivo</div>
+                            <div class="resumen-valor">177 casas</div>
+                        </div>
+                        <div class="resumen-item">
+                            <div class="resumen-label">Ingresos</div>
+                            <div class="resumen-valor">$91.5B</div>
+                        </div>
+                        <div class="resumen-item destacado">
+                            <div class="resumen-label">ROI</div>
+                            <div class="resumen-valor">572x</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="equipo-tabla">
+                <h3>💰 Desglose de Inversión</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Concepto</th>
+                            <th>Mes 1</th>
+                            <th>Mes 2-3</th>
+                            <th>Mes 4+</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>María (Directora)</td>
+                            <td>$8,500,000</td>
+                            <td>$8,500,000</td>
+                            <td>$8,500,000</td>
+                        </tr>
+                        <tr>
+                            <td>Fabianni (Digital)</td>
+                            <td>$1,500,000</td>
+                            <td>$2,000,000</td>
+                            <td>$2,500,000</td>
+                        </tr>
+                        <tr>
+                            <td>Fabián (CRM/Auto)</td>
+                            <td>$2,500,000</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Herramientas</td>
+                            <td>$500,000</td>
+                            <td>$500,000</td>
+                            <td>$500,000</td>
+                        </tr>
+                        <tr>
+                            <td>Pauta</td>
+                            <td>$800,000</td>
+                            <td>$1,500,000</td>
+                            <td>$2,500,000</td>
+                        </tr>
+                        <tr class="total-row">
+                            <td><strong>TOTAL</strong></td>
+                            <td><strong>$13,800,000</strong></td>
+                            <td><strong>$12,500,000</strong></td>
+                            <td><strong>$14,000,000</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="nota-tabla">Community Manager la paga OTG directamente (no incluida)</p>
+            </div>
+            
+            <button class="btn-primary" onclick="irSeccion('cierre')">
+                Ver Resumen Final
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección: Cierre -->
+    <section id="cierre" class="seccion">
+        <div class="container-seccion">
+            <button class="btn-back" onclick="irSeccion('menu')">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Volver al menú
+            </button>
+            
+            <div class="cierre-content">
+                <div class="logo-cierre">
+                    <svg viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 150 20 L 220 60 L 220 55 L 150 15 L 80 55 L 80 60 Z" fill="#FB6600"/>
+                        <rect x="195" y="28" width="12" height="25" fill="#FB6600"/>
+                        <text x="150" y="85" font-family="Inter, sans-serif" font-size="32" font-weight="800" text-anchor="middle" fill="#000">OTG</text>
+                        <text x="150" y="105" font-family="Inter, sans-serif" font-size="13" font-weight="500" text-anchor="middle" fill="#242424">CONSTRUCTORA</text>
+                    </svg>
+                </div>
+                
+                <h2>Estrategia Digital Cantabria 2</h2>
+                
+                <div class="razones-box">
+                    <h3>Por qué funcionará:</h3>
+                    <div class="razones-grid">
+                        <div class="razon-item">
+                            <div class="razon-numero">1</div>
+                            <p>Basada en datos reales (16% CTR, $26K CPL histórico)</p>
+                        </div>
+                        <div class="razon-item">
+                            <div class="razon-numero">2</div>
+                            <p>Resuelve problema #1: Tracking = ROAS medible</p>
+                        </div>
+                        <div class="razon-item">
+                            <div class="razon-numero">3</div>
+                            <p>Multicanal integrado (pauta + SEO + contenido)</p>
+                        </div>
+                        <div class="razon-item">
+                            <div class="razon-numero">4</div>
+                            <p>Automatización inteligente libera vendedores</p>
+                        </div>
+                        <div class="razon-item">
+                            <div class="razon-numero">5</div>
+                            <p>Segmentación precisa por buyer persona</p>
+                        </div>
+                        <div class="razon-item">
+                            <div class="razon-numero">6</div>
+                            <p>Financiamiento híbrido captura 30% extra</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="meta-box">
+                    <h3>Meta Alcanzable</h3>
+                    <p class="calculo">200 leads/mes × 12% conversión = <strong>24 ventas/mes</strong></p>
+                    <p class="resultado-meta">EXCEDE meta de 14.75/mes ✅</p>
+                </div>
+                
+                <div class="diferenciador-box">
+                    <h3>Diferenciador Real</h3>
+                    <p>No es solo marketing, es un <strong>sistema completo</strong> de atracción-conversión-retención que convierte a OTG en una máquina de ventas predecible y escalable.</p>
+                </div>
+                
+                <div class="next-steps">
+                    <h3>Siguiente Paso</h3>
+                    <p>Reunión para revisar estrategia, aprobar presupuesto y definir kickoff</p>
+                    <div class="contacto">
+                        <p class="nombre">María Fernanda Varón</p>
+                        <p>Directora de Estrategia Digital</p>
+                        <p>Febrero 2026</p>
+                    </div>
+                </div>
+                
+                <button class="btn-primary" onclick="irSeccion('inicio')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    Volver al Inicio
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
