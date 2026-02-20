@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrategia Digital 360° - Cantabria 2 | OTG Constructora</title>
+    <meta name="description" content="Propuesta estrategia digital completa para vender 177 casas en Cantabria 2">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegación fija -->
+    <nav class="nav-top">
+        <div class="nav-brand">
+            <span class="brand-icon">🏠</span>
+            <span class="brand-text">Cantabria 2</span>
+        </div>
+        <div class="nav-progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="nav-counter">
+            <span id="currentSection">1</span>/<span id="totalSections">15</span>
+        </div>
+    </nav>
+
+    <!-- Navegación lateral -->
+    <div class="nav-dots" id="navDots"></div>
+
+    <!-- Contenedor principal -->
+    <main class="slides-container" id="slidesContainer">
+        
+        <!-- Slide 1: Portada -->
+        <section class="slide slide-cover" data-section="1">
+            <div class="slide-content">
+                <div class="cover-badge">Versión Ejecutiva</div>
+                <h1 class="cover-title">
+                    <span class="title-line">Estrategia Digital</span>
+                    <span class="title-line accent">360°</span>
+                    <span class="title-line">Cantabria 2</span>
+                </h1>
+                <div class="cover-subtitle">
+                    <p class="subtitle-main">OTG Constructora</p>
+                    <p class="subtitle-date">Febrero 2026</p>
+                </div>
+                <div class="cover-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">177</div>
+                        <div class="stat-label">Casas</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">$91,509M</div>
+                        <div class="stat-label">Meta</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Meses</div>
+                    </div>
+                </div>
+                <button class="btn-start" onclick="nextSlide()">
+                    Ver Propuesta →
+                </button>
+            </div>
+            <div class="cover-pattern"></div>
+        </section>
+
+        <!-- Slide 2: Contexto -->
+        <section class="slide" data-section="2">
+            <div class="slide-content">
+                <h2 class="slide-title">Contexto y Objetivo</h2>
+                
+                <div class="context-grid">
+                    <div class="context-card card-problem">
+                        <h3 class="card-title">Situación Actual</h3>
+                        <ul class="context-list">
+                            <li>Invirtieron <strong>$7.5M en pauta</strong> (mayo-dic 2024)</li>
+                            <li>Generaron <strong>1,942 conversaciones</strong></li>
+                            <li class="highlight-negative">NO saben cuántas vendieron (sin tracking)</li>
+                            <li>Sin CRM, sin automatización, sin funnel estructurado</li>
+                        </ul>
+                    </div>
+
+                    <div class="context-card card-opportunity">
+                        <h3 class="card-title">Oportunidad</h3>
+                        <ul class="context-list">
+                            <li><strong>CTR excepcional: 16%</strong> (industria: 2-3%)</li>
+                            <li>Audiencia muy receptiva</li>
+                            <li>Producto único: Casas listas + financiamiento propio</li>
+                            <li class="highlight-positive">Solo falta infraestructura para convertir</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="key-insight">
+                    <div class="insight-icon">💡</div>
+                    <div class="insight-text">
+                        <strong>Insight clave:</strong> Están generando tráfico sin tener la infraestructura para convertirlo. Es como llenar agua en un balde con hueco.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: Propuesta -->
+        <section class="slide slide-dark" data-section="3">
+            <div class="slide-content">
+                <div class="quote-block">
+                    <div class="quote-mark">"</div>
+                    <p class="quote-text">
+                        Primero construimos el sistema que captura, nutre y convierte leads automáticamente, 
+                        luego escalamos la inversión publicitaria sabiendo que cada peso genera retorno medible.
+                    </p>
+                </div>
+
+                <h2 class="slide-title centered">Enfoque en 3 Fases</h2>
+
+                <div class="phases-container">
+                    <div class="phase-card">
+                        <div class="phase-number">01</div>
+                        <h3 class="phase-title">CONSTRUIR</h3>
+                        <p class="phase-period">Mes 1</p>
+                        <ul class="phase-list">
+                            <li>CRM + Bot WhatsApp IA</li>
+                            <li>Tracking completo</li>
+                            <li>Pauta conservadora ($800K)</li>
+                        </ul>
+                    </div>
+
+                    <div class="phase-card">
+                        <div class="phase-number">02</div>
+                        <h3 class="phase-title">VALIDAR</h3>
+                        <p class="phase-period">Mes 2-3</p>
+                        <ul class="phase-list">
+                            <li>Optimizar basado en data</li>
+                            <li>Escalar pauta ($1.5M)</li>
+                            <li>Probar y ajustar</li>
+                        </ul>
+                    </div>
+
+                    <div class="phase-card">
+                        <div class="phase-number">03</div>
+                        <h3 class="phase-title">ESCALAR</h3>
+                        <p class="phase-period">Mes 4+</p>
+                        <ul class="phase-list">
+                            <li>Sistema probado</li>
+                            <li>Pauta plena ($2.5M/mes)</li>
+                            <li>Conversión predecible</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: Equipo -->
+        <section class="slide" data-section="4">
+            <div class="slide-content">
+                <h2 class="slide-title">Equipo y Roles</h2>
+
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-header">
+                            <div class="team-name">María Fernanda Varón</div>
+                            <div class="team-role">Directora de Estrategia</div>
+                        </div>
+                        <div class="team-price-flexible">Según presupuesto disponible</div>
+                        <p class="team-note-flexible">Propuesta flexible basada en capacidad de inversión de OTG</p>
+                        <ul class="team-responsibilities">
+                            <li>Dirección estratégica general</li>
+                            <li>Coordinación equipo completo</li>
+                            <li>Relación directa con OTG</li>
+                            <li>Reportes ejecutivos mensuales</li>
+                        </ul>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-header">
+                            <div class="team-name">Fabianni</div>
+                            <div class="team-role">SEO + Pauta + Medición</div>
+                        </div>
+                        <div class="team-price">$2M + 20%<span> pauta</span></div>
+                        <div class="team-pricing-breakdown">
+                            <div class="pricing-item">
+                                <span>Mes 1:</span>
+                                <strong>$2,160,000</strong>
+                            </div>
+                            <div class="pricing-item">
+                                <span>Mes 2-3:</span>
+                                <strong>$2,300,000</strong>
+                            </div>
+                            <div class="pricing-item">
+                                <span>Mes 4+:</span>
+                                <strong>$2,500,000</strong>
+                            </div>
+                        </div>
+                        <ul class="team-responsibilities">
+                            <li>SEO completo (keywords, contenido, rankings)</li>
+                            <li>Gestión pauta Meta + Google</li>
+                            <li>Google Analytics 4 + Tag Manager</li>
+                            <li>Creación de audiencias</li>
+                        </ul>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-header">
+                            <div class="team-name">Fabián</div>
+                            <div class="team-role">Tecnología</div>
+                        </div>
+                        <div class="team-price">$3.1M - $8.8M<span>/mes</span></div>
+                        <div class="team-note">según volumen de leads</div>
+                        <ul class="team-responsibilities">
+                            <li>Bot WhatsApp con IA</li>
+                            <li>CRM Comercial OTG</li>
+                            <li>Sistema Financiero integrado</li>
+                            <li>Página web y webmaster</li>
+                        </ul>
+                        <div class="team-setup">
+                            <strong>Setup inicial:</strong> $18,100,000
+                        </div>
+                    </div>
+
+                    <div class="team-card team-card-special">
+                        <div class="team-header">
+                            <div class="team-name">Isabella</div>
+                            <div class="team-role">Community Manager</div>
+                        </div>
+                        <div class="team-badge">Pagada por OTG</div>
+                        <div class="team-note-special">Nosotros la guiamos estratégicamente</div>
+                        <ul class="team-responsibilities">
+                            <li>30+ fotos editadas/mes</li>
+                            <li>6 videos verticales/mes</li>
+                            <li>12 posts redes sociales/mes</li>
+                            <li>6 artículos blog/mes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: Estrategia 360 -->
+        <section class="slide slide-accent" data-section="5">
+            <div class="slide-content">
+                <h2 class="slide-title">Estrategia 360°</h2>
+
+                <div class="strategy-360">
+                    <div class="strategy-block">
+                        <div class="strategy-icon">🎯</div>
+                        <h3 class="strategy-heading">Medios Propios</h3>
+                        <p class="strategy-subtitle">Owned Media</p>
+                        <ul class="strategy-list">
+                            <li><strong>Instagram:</strong> 1 post/sem + 2-3 stories/día + 2 reels/sem</li>
+                            <li><strong>TikTok:</strong> 4-5 videos/sem</li>
+                            <li><strong>Facebook:</strong> 2-3 posts/sem</li>
+                            <li><strong>Blog:</strong> 6 artículos SEO/mes</li>
+                            <li><strong>WhatsApp Business</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="strategy-block strategy-block-highlight">
+                        <div class="strategy-icon">💰</div>
+                        <h3 class="strategy-heading">Medios Pagos</h3>
+                        <p class="strategy-subtitle">Paid Media</p>
+                        <div class="pauta-breakdown">
+                            <div class="pauta-channel">Meta Ads <span>60%</span></div>
+                            <div class="pauta-channel">Google SEM <span>30%</span></div>
+                            <div class="pauta-channel">Performance Max <span>10%</span></div>
+                        </div>
+                        <div class="pauta-investment">
+                            <div class="invest-item">
+                                <span>Mes 1:</span>
+                                <strong>$800K</strong>
+                            </div>
+                            <div class="invest-item">
+                                <span>Mes 2-3:</span>
+                                <strong>$1.5M</strong>
+                            </div>
+                            <div class="invest-item">
+                                <span>Mes 4-12:</span>
+                                <strong>$2.5M</strong>
+                            </div>
+                        </div>
+                        <div class="total-year">Total año: <strong>$26,300,000</strong></div>
+                    </div>
+
+                    <div class="strategy-block">
+                        <div class="strategy-icon">🌟</div>
+                        <h3 class="strategy-heading">Medios Ganados</h3>
+                        <p class="strategy-subtitle">Earned Media</p>
+                        <ul class="strategy-list">
+                            <li><strong>SEO orgánico</strong></li>
+                            <li><strong>Testimonios</strong> clientes</li>
+                            <li><strong>Programa referidos:</strong> $5M por casa vendida</li>
+                            <li><strong>Word of mouth</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: Tecnología Bot -->
+        <section class="slide" data-section="6">
+            <div class="slide-content">
+                <h2 class="slide-title">Tecnología Clave</h2>
+                
+                <div class="tech-showcase">
+                    <div class="tech-main">
+                        <div class="tech-icon">🤖</div>
+                        <h3>Bot WhatsApp con IA</h3>
+                        <p class="tech-tagline">Tu asistente virtual 24/7</p>
+                    </div>
+
+                    <div class="tech-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">⚡</div>
+                            <div class="feature-content">
+                                <strong>Respuesta instantánea</strong>
+                                <p>Menos de 1 minuto, 24/7</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">💬</div>
+                            <div class="feature-content">
+                                <strong>Conversación natural</strong>
+                                <p>No robótico, con IA avanzada</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎯</div>
+                            <div class="feature-content">
+                                <strong>Calificación automática</strong>
+                                <p>Score BANT (Budget, Authority, Need, Timeline)</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">📊</div>
+                            <div class="feature-content">
+                                <strong>Envío al CRM inmediato</strong>
+                                <p>Integración perfecta con el sistema</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 7: CRM -->
+        <section class="slide slide-dark" data-section="7">
+            <div class="slide-content">
+                <div class="tech-showcase">
+                    <div class="tech-main">
+                        <div class="tech-icon">📈</div>
+                        <h3>CRM Comercial OTG</h3>
+                        <p class="tech-tagline">Tu centro de operaciones</p>
+                    </div>
+
+                    <div class="crm-pipeline">
+                        <h4 class="pipeline-title">Pipeline de Ventas (7 etapas)</h4>
+                        <div class="pipeline-steps">
+                            <div class="pipeline-step">
+                                <div class="step-number">1</div>
+                                <div class="step-name">Lead nuevo</div>
+                                <div class="step-action">Auto-asignación</div>
+                            </div>
+                            <div class="pipeline-arrow">→</div>
+                            <div class="pipeline-step">
+                                <div class="step-number">2</div>
+                                <div class="step-name">Contactado</div>
+                                <div class="step-action">Asesor llama</div>
+                            </div>
+                            <div class="pipeline-arrow">→</div>
+                            <div class="pipeline-step">
+                                <div class="step-number">3</div>
+                                <div class="step-name">Interesado</div>
+                                <div class="step-action">Visita agendada</div>
+                            </div>
+                            <div class="pipeline-arrow">→</div>
+                            <div class="pipeline-step">
+                                <div class="step-number">4</div>
+                                <div class="step-name">Calificado</div>
+                                <div class="step-action">Visita realizada</div>
+                            </div>
+                            <div class="pipeline-arrow">→</div>
+                            <div class="pipeline-step">
+                                <div class="step-number">5</div>
+                                <div class="step-name">Negociación</div>
+                                <div class="step-action">Propuesta enviada</div>
+                            </div>
+                            <div class="pipeline-arrow">→</div>
+                            <div class="pipeline-step pipeline-step-success">
+                                <div class="step-number">6</div>
+                                <div class="step-name">VENDIDO</div>
+                                <div class="step-action">🎉</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="crm-benefits">
+                        <div class="benefit-box">
+                            <strong>Dashboard en tiempo real</strong>
+                        </div>
+                        <div class="benefit-box">
+                            <strong>Notificaciones automáticas</strong>
+                        </div>
+                        <div class="benefit-box">
+                            <strong>Historial completo por lead</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 8: Funnel -->
+        <section class="slide" data-section="8">
+            <div class="slide-content">
+                <h2 class="slide-title">Funnel de Conversión</h2>
+
+                <div class="funnel-container">
+                    <div class="funnel-step funnel-step-1">
+                        <div class="funnel-number">300-500</div>
+                        <div class="funnel-label">CLICKS/MES</div>
+                        <div class="funnel-sublabel">Meta + Google + SEO</div>
+                    </div>
+                    <div class="funnel-arrow">↓</div>
+                    
+                    <div class="funnel-step funnel-step-2">
+                        <div class="funnel-icon">🤖</div>
+                        <div class="funnel-label">BOT CAPTURA</div>
+                        <div class="funnel-sublabel">24/7 Calificación automática</div>
+                    </div>
+                    <div class="funnel-arrow">↓</div>
+                    
+                    <div class="funnel-step funnel-step-3">
+                        <div class="funnel-number">200</div>
+                        <div class="funnel-label">LEADS CALIFICADOS/MES</div>
+                        <div class="funnel-sublabel">En CRM organizados</div>
+                    </div>
+                    <div class="funnel-arrow">↓</div>
+                    
+                    <div class="funnel-step funnel-step-4">
+                        <div class="funnel-flow">
+                            <span>180 contactados</span>
+                            <span class="flow-arrow">→</span>
+                            <span>63 visitas</span>
+                            <span class="flow-arrow">→</span>
+                            <span>15 propuestas</span>
+                            <span class="flow-arrow">→</span>
+                            <span class="flow-final">12 VENTAS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conversion-rate">
+                    <div class="rate-box">
+                        <span>Conversión Mes 1:</span>
+                        <strong>6%</strong>
+                    </div>
+                    <div class="rate-arrow">→</div>
+                    <div class="rate-box rate-box-highlight">
+                        <span>Conversión Mes 4+:</span>
+                        <strong>12%</strong>
+                    </div>
+                </div>
+
+                <div class="why-improves">
+                    <h3>¿Por qué mejora la conversión?</h3>
+                    <div class="improve-grid">
+                        <div class="improve-item">✅ Respuesta inmediata (<1 min vs horas)</div>
+                        <div class="improve-item">✅ Seguimiento automático (ningún lead se pierde)</div>
+                        <div class="improve-item">✅ CRM organiza todo el proceso</div>
+                        <div class="improve-item">✅ Asesor solo atiende leads calificados</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 9: Cronograma -->
+        <section class="slide slide-accent" data-section="9">
+            <div class="slide-content">
+                <h2 class="slide-title">Cronograma 12 Meses</h2>
+
+                <div class="timeline">
+                    <div class="timeline-phase">
+                        <div class="timeline-header">
+                            <span class="timeline-period">MES 1</span>
+                            <span class="timeline-name">Fundaciones</span>
+                        </div>
+                        <ul class="timeline-items">
+                            <li>Setup completo tecnología</li>
+                            <li>Inicio página web</li>
+                            <li>CRM temporal funcionando</li>
+                            <li>Bot WhatsApp en producción</li>
+                            <li>Primeras campañas validación</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-phase">
+                        <div class="timeline-header">
+                            <span class="timeline-period">MES 2-3</span>
+                            <span class="timeline-name">Validación</span>
+                        </div>
+                        <ul class="timeline-items">
+                            <li>Optimización basada en data</li>
+                            <li>Refinamiento de audiencias</li>
+                            <li>Aumento gradual de pauta</li>
+                            <li>Sistema validado</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-phase">
+                        <div class="timeline-header">
+                            <span class="timeline-period">MES 4-6</span>
+                            <span class="timeline-name">Aceleración</span>
+                        </div>
+                        <ul class="timeline-items">
+                            <li>Pauta plena ($2.5M)</li>
+                            <li>CRM custom (decisión en mes 3)</li>
+                            <li>Remarketing optimizado</li>
+                            <li>SEO traccionando (si web lista)</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-phase">
+                        <div class="timeline-header">
+                            <span class="timeline-period">MES 7-12</span>
+                            <span class="timeline-name">Optimización Máxima</span>
+                        </div>
+                        <ul class="timeline-items">
+                            <li>Sistema Financiero en desarrollo</li>
+                            <li>Portal del Cliente activo</li>
+                            <li>SEO posicionado</li>
+                            <li>Operación optimizada al máximo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 10: Inversión -->
+        <section class="slide" data-section="10">
+            <div class="slide-content">
+                <h2 class="slide-title">Inversión</h2>
+
+                <div class="investment-section">
+                    <div class="investment-block investment-setup">
+                        <h3>Setup Inicial (Pago único)</h3>
+                        <div class="setup-breakdown">
+                            <div class="setup-item">
+                                <span>Bot WhatsApp IA</span>
+                                <strong>$4,800,000</strong>
+                            </div>
+                            <div class="setup-item">
+                                <span>CRM Comercial</span>
+                                <strong>$4,000,000</strong>
+                            </div>
+                            <div class="setup-item">
+                                <span>Sistema Financiero</span>
+                                <strong>$7,830,000</strong>
+                            </div>
+                            <div class="setup-item">
+                                <span>Integraciones</span>
+                                <strong>$2,500,000</strong>
+                            </div>
+                            <div class="setup-item">
+                                <span>Configuración</span>
+                                <strong>$1,000,000</strong>
+                            </div>
+                        </div>
+                        <div class="total-line">
+                            <span>TOTAL SETUP:</span>
+                            <strong>$20,130,000</strong>
+                        </div>
+                        <div class="payment-terms">
+                            50% firma contrato ($10,065,000) + 50% entrega producción ($10,065,000)
+                        </div>
+                    </div>
+
+                    <div class="investment-monthly">
+                        <h3>Inversión Mensual (Tier 1)</h3>
+                        
+                        <div class="monthly-phases">
+                            <div class="monthly-box">
+                                <div class="month-label">Mes 1</div>
+                                <div class="amount-breakdown">
+                                    <div>Dirección Estratégica: A definir</div>
+                                    <div>Fabianni: $2,160,000</div>
+                                    <div>Tecnología: $3,100,000</div>
+                                    <div>Herramientas: $500,000</div>
+                                    <div>Pauta: $800,000</div>
+                                </div>
+                                <div class="month-total-flexible">
+                                    <span class="base-cost">Base: $6,560,000</span>
+                                    <span class="plus-management">+ Dirección (a cotizar)</span>
+                                </div>
+                            </div>
+
+                            <div class="monthly-box">
+                                <div class="month-label">Mes 2-3</div>
+                                <div class="amount-breakdown">
+                                    <div>Dirección Estratégica: A definir</div>
+                                    <div>Fabianni: $2,300,000</div>
+                                    <div>Tecnología: $3,100,000</div>
+                                    <div>Herramientas: $500,000</div>
+                                    <div>Pauta: $1,500,000</div>
+                                </div>
+                                <div class="month-total-flexible">
+                                    <span class="base-cost">Base: $7,400,000</span>
+                                    <span class="plus-management">+ Dirección (a cotizar)</span>
+                                </div>
+                            </div>
+
+                            <div class="monthly-box monthly-box-highlight">
+                                <div class="month-label">Mes 4+</div>
+                                <div class="amount-breakdown">
+                                    <div>Dirección Estratégica: A definir</div>
+                                    <div>Fabianni: $2,500,000</div>
+                                    <div>Tecnología: $3,100,000</div>
+                                    <div>Herramientas: $500,000</div>
+                                    <div>Pauta: $2,500,000</div>
+                                </div>
+                                <div class="month-total-flexible">
+                                    <span class="base-cost">Base: $8,600,000</span>
+                                    <span class="plus-management">+ Dirección (a cotizar)</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing-note">
+                            <strong>Nota:</strong> El costo de Dirección Estratégica se ajustará según el presupuesto disponible de OTG y el alcance final del proyecto.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="investment-total">
+                    <div class="total-item">
+                        <span>Setup inicial:</span>
+                        <strong>$20,130,000</strong>
+                    </div>
+                    <div class="total-item">
+                        <span>Operación 12 meses (base):</span>
+                        <strong>$99,060,000</strong>
+                    </div>
+                    <div class="total-item total-note">
+                        <span>+ Dirección Estratégica:</span>
+                        <strong>A cotizar según presupuesto OTG</strong>
+                    </div>
+                    <div class="total-item total-final">
+                        <span>INVERSIÓN BASE AÑO:</span>
+                        <strong>$119,190,000</strong>
+                    </div>
+                    <p class="total-disclaimer">*Más honorarios de dirección estratégica a definir conjuntamente</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 11: Tiers -->
+        <section class="slide slide-dark" data-section="11">
+            <div class="slide-content">
+                <h2 class="slide-title">Tiers de Tecnología</h2>
+                <p class="tier-subtitle">Se ajusta automáticamente según volumen de leads</p>
+
+                <div class="tiers-container">
+                    <div class="tier-card tier-1">
+                        <div class="tier-badge">Proyectado</div>
+                        <div class="tier-name">TIER 1</div>
+                        <div class="tier-volume">Hasta 1,000 leads/mes</div>
+                        <div class="tier-price">$3,100,000<span>/mes</span></div>
+                        <div class="tier-note">Primeros 6-9 meses</div>
+                    </div>
+
+                    <div class="tier-card tier-2">
+                        <div class="tier-name">TIER 2</div>
+                        <div class="tier-volume">Hasta 2,000 leads/mes</div>
+                        <div class="tier-price">$4,400,000<span>/mes</span></div>
+                    </div>
+
+                    <div class="tier-card tier-3">
+                        <div class="tier-name">TIER 3</div>
+                        <div class="tier-volume">Hasta 5,000 leads/mes</div>
+                        <div class="tier-price">$8,800,000<span>/mes</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 12: KPIs y Reportes -->
+        <section class="slide" data-section="12">
+            <div class="slide-content">
+                <h2 class="slide-title">KPIs y Reportes</h2>
+
+                <div class="kpi-approach">
+                    <h3>Enfoque de Medición</h3>
+                    <p class="kpi-description">Los KPIs se definen mes a mes según inversión real, aprendizajes de las herramientas, comportamiento de audiencia y objetivos específicos.</p>
+                    <div class="benefits-kpi">
+                        <span class="benefit-tag">✅ Flexibilidad estratégica</span>
+                        <span class="benefit-tag">✅ Ajustes basados en realidad</span>
+                        <span class="benefit-tag">✅ Metas alcanzables</span>
+                        <span class="benefit-tag">✅ Optimización continua</span>
+                    </div>
+                </div>
+
+                <div class="kpi-categories">
+                    <div class="kpi-category">
+                        <h4>📈 Marketing</h4>
+                        <ul>
+                            <li>CPL (Costo Por Lead)</li>
+                            <li>ROAS (Return On Ad Spend)</li>
+                            <li>Tráfico orgánico</li>
+                            <li>Posicionamiento SEO</li>
+                            <li>Engagement redes sociales</li>
+                        </ul>
+                    </div>
+
+                    <div class="kpi-category">
+                        <h4>⚙️ Operación</h4>
+                        <ul>
+                            <li>Tiempo primera respuesta</li>
+                            <li>% leads atendidos <4h</li>
+                            <li>Conversión por etapa</li>
+                            <li>Uptime tecnología (>99%)</li>
+                            <li>Satisfacción de leads</li>
+                        </ul>
+                    </div>
+
+                    <div class="kpi-category">
+                        <h4>💼 Negocio</h4>
+                        <ul>
+                            <li>Leads generados/mes</li>
+                            <li>Ventas cerradas/mes</li>
+                            <li>Ticket promedio</li>
+                            <li>ROI general</li>
+                            <li>Proyección vs objetivo</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="reports-schedule">
+                    <div class="report-box">
+                        <strong>Semanal</strong>
+                        <p>Interno: Leads, pauta, alertas</p>
+                    </div>
+                    <div class="report-box">
+                        <strong>Mensual</strong>
+                        <p>OTG: Dashboard ejecutivo completo</p>
+                    </div>
+                    <div class="report-box">
+                        <strong>Trimestral</strong>
+                        <p>Análisis tendencias y ajustes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 13: Qué incluye / No incluye -->
+        <section class="slide slide-accent" data-section="13">
+            <div class="slide-content">
+                <h2 class="slide-title">Qué Incluye / No Incluye</h2>
+
+                <div class="include-grid">
+                    <div class="include-section include-yes">
+                        <h3>✅ Incluye</h3>
+                        <div class="include-group">
+                            <h4>Equipo completo</h4>
+                            <ul>
+                                <li>Dirección estratégica (María)</li>
+                                <li>SEO + Pauta + Medición (Fabianni)</li>
+                                <li>Tecnología completa (Fabián)</li>
+                                <li>Guía estratégica Isabella</li>
+                            </ul>
+                        </div>
+                        <div class="include-group">
+                            <h4>Tecnología</h4>
+                            <ul>
+                                <li>Bot WhatsApp IA</li>
+                                <li>CRM comercial</li>
+                                <li>Sistema financiero (mes 6+)</li>
+                                <li>Portal del cliente</li>
+                                <li>Tracking completo</li>
+                                <li>Webmaster</li>
+                            </ul>
+                        </div>
+                        <div class="include-group">
+                            <h4>Gestión continua</h4>
+                            <ul>
+                                <li>Reuniones semanales internas</li>
+                                <li>Reportes mensuales con OTG</li>
+                                <li>Optimización constante</li>
+                                <li>Soporte incluido</li>
+                                <li>Ajustes sin costo en alcance</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="include-section include-no">
+                        <h3>❌ No Incluye</h3>
+                        <ul class="not-included-list">
+                            <li>Isabella ($1.6M/mes) - la paga OTG directamente</li>
+                            <li>Gastos de producción extraordinarios</li>
+                            <li>Cambios mayores de alcance (se cotizan aparte)</li>
+                            <li>Servicios fuera del scope definido</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 14: Sinergia -->
+        <section class="slide" data-section="14">
+            <div class="slide-content">
+                <h2 class="slide-title">Sinergia Crítica: Equipo Digital + OTG</h2>
+                <p class="sinergia-subtitle">El éxito requiere trabajo conjunto</p>
+
+                <div class="sinergia-grid">
+                    <div class="sinergia-card">
+                        <h3>Nosotros nos comprometemos a:</h3>
+                        <ul class="commitment-list">
+                            <li><span class="check">✅</span> Leads calificados consistentes</li>
+                            <li><span class="check">✅</span> Reportes transparentes y puntuales</li>
+                            <li><span class="check">✅</span> Tecnología funcionando 24/7</li>
+                            <li><span class="check">✅</span> Optimización continua basada en data</li>
+                            <li><span class="check">✅</span> Comunicación constante</li>
+                        </ul>
+                    </div>
+
+                    <div class="sinergia-card sinergia-critical">
+                        <h3>OTG debe comprometerse a:</h3>
+                        <ul class="commitment-list">
+                            <li><span class="check">✅</span> <strong>Atender leads rápido</strong> (cada lead no atendido se pierde)</li>
+                            <li><span class="check">✅</span> Dar feedback de calidad de leads</li>
+                            <li><span class="check">✅</span> Proporcionar material visual según planeación</li>
+                            <li><span class="check">✅</span> Disponibilidad para reuniones semanales</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="risks-box">
+                    <h3>🚨 Riesgos si no hay coordinación</h3>
+                    <div class="risks-grid">
+                        <div class="risk-item">❌ Leads no atendidos rápido → Se pierden con competencia</div>
+                        <div class="risk-item">❌ Info desactualizada → Leads frustrados</div>
+                        <div class="risk-item">❌ Sin feedback → No podemos optimizar</div>
+                        <div class="risk-item">❌ Lentitud en respuestas → Oportunidades perdidas</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 15: Por qué funciona + Próximos pasos -->
+        <section class="slide slide-dark slide-final" data-section="15">
+            <div class="slide-content">
+                <h2 class="slide-title">Por Qué Esta Estrategia Funcionará</h2>
+
+                <div class="reasons-grid">
+                    <div class="reason-card">
+                        <div class="reason-number">1</div>
+                        <h3>Validamos primero, escalamos después</h3>
+                        <p>No quemamos presupuesto sin sistema probado</p>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-number">2</div>
+                        <h3>Infraestructura sólida</h3>
+                        <p>CRM organiza todo, Bot atiende 24/7</p>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-number">3</div>
+                        <h3>Data y medición real</h3>
+                        <p>Sabrán exactamente qué funciona y ROI por peso</p>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-number">4</div>
+                        <h3>Equipo completo 360°</h3>
+                        <p>Todo el ecosistema digital trabajando junto</p>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-number">5</div>
+                        <h3>Ventaja competitiva clara</h3>
+                        <p>Financiamiento propio + casas listas</p>
+                    </div>
+                </div>
+
+                <div class="next-steps">
+                    <h2>🚀 Próximos Pasos</h2>
+                    <div class="steps-flow">
+                        <div class="step-item">
+                            <div class="step-num">1</div>
+                            <div class="step-text">Aprobación propuesta</div>
+                        </div>
+                        <div class="step-arrow">→</div>
+                        <div class="step-item">
+                            <div class="step-num">2</div>
+                            <div class="step-text">Firma de contrato</div>
+                        </div>
+                        <div class="step-arrow">→</div>
+                        <div class="step-item">
+                            <div class="step-num">3</div>
+                            <div class="step-text">Pago inicial 50%</div>
+                        </div>
+                        <div class="step-arrow">→</div>
+                        <div class="step-item">
+                            <div class="step-num">4</div>
+                            <div class="step-text">Kickoff</div>
+                        </div>
+                        <div class="step-arrow">→</div>
+                        <div class="step-item step-item-highlight">
+                            <div class="step-num">5</div>
+                            <div class="step-text">Go Live (4 sem)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="final-cta">
+                    <div class="final-message">
+                        <h3>Resultado Esperado en 12 Meses</h3>
+                        <div class="expected-results">
+                            <div class="result-item">✅ Sistema propio funcionando</div>
+                            <div class="result-item">✅ Meta cumplida de forma medible</div>
+                            <div class="result-item">✅ Data para futuros proyectos</div>
+                            <div class="result-item">✅ Proceso escalable y replicable</div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-box">
+                        <p><strong>Preparado exclusivamente para:</strong></p>
+                        <p class="company-name">OTG Constructora - Proyecto Cantabria 2</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Controles de navegación -->
+    <div class="nav-controls">
+        <button class="nav-btn nav-prev" id="prevBtn" onclick="prevSlide()">
+            ← Anterior
+        </button>
+        <button class="nav-btn nav-next" id="nextBtn" onclick="nextSlide()">
+            Siguiente →
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
